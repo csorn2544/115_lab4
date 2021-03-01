@@ -2,17 +2,17 @@
 #include <string.h>
 int main()
 {
-    char string[200],i;
-    gets(string);
-    for(i=0;i!=strlen(string);i++)
+    int i=0,temp;
+    char str[200];
+    scanf("%s" ,str);
+    temp=strlen(str);
+    while(i<temp)
     {
-        if(string[i]==string[i+1])
+        if(str[i]!=str[i+1])
         {
-            continue;
+            printf("%c",str[i]);
         }
-        else
-        {
-            printf("%c",string[i]);
-        }
+        i++;
     }
+    return 0;
 }
